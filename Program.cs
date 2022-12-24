@@ -3,7 +3,20 @@ class Program
 {
     static void Main(string[] args)
     {
+        /* Студент geekbrains: Курочкин Алексей Иванович */
 
+        void Task()  // Решение задачи контрольной работы.
+        {
+            Console.WriteLine("- - - - - - - - Студент geekbrains: Курочкин Алексей Иванович - - - - - - - -\n");
+            Console.WriteLine("\tЗадача: Написать программу, которая из имеющегося массива строк ");
+            Console.WriteLine("формирует новый массив из строк, длина которых меньше, либо равна 3 символам.\n");
+            Console.WriteLine("\tВы хотите ввести слова/числа/символы через клавиатуру?");
+            Console.Write("\tНажмите 'Y' - это ДА, 'N' - это нет -> ");
+            string? enteringText = Console.ReadLine();
+            if (enteringText?.ToLower() == "y") Task2();
+            else if (enteringText?.ToLower() == "n") Task1();
+            else Console.WriteLine("\tВвод неверный! ");
+        }
 
         void Task1() // Вводит тект компьютер
         {
@@ -60,7 +73,7 @@ class Program
             Console.Write("]");
         }
 
-
+        Task();
 
     }
 }
