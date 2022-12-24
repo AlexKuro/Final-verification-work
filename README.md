@@ -54,4 +54,4 @@ _________________
 
 + 2 метод. PrintArrayStr - печать массива.
 
-## Ссылка решения задачи: [GitHub](https://github.com/)
+## Ссылка решения задачи: [GitHub](https://github.com/AlexKuro/Final-verification-work.git)
