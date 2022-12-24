@@ -24,6 +24,22 @@ class Program
             Console.WriteLine();
         }
 
+        void Task2() // Ввод текста через клавиатуру
+        {
+            Console.WriteLine("\tВыбран ввод через клавиатуру.");
+            Console.WriteLine();
+            Console.WriteLine("Введите текты разной длины. Длина которых меньше, либо равна 3 или больше.");
+            Console.Write("Вводите через пробел!: ");
+            string? container = Console.ReadLine();
+            string[] text = container!.Split();
+            Console.WriteLine();
+            Console.Write("\t");
+            PrintArrayStr(text);
+            Console.Write(" --> ");
+            PrintArrayStr(SearchByLines(text));
+            Console.WriteLine();
+        }
+
         string[] SearchByLines(string[] text, int lenNum = 3) // поиск нужных элементов по длине строки 
         {
             int size = text.Length;
